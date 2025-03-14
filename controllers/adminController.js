@@ -13,7 +13,7 @@ exports.updateProduct = (req, res) => {
 
   if(req.files && req.files.length>0){
     req.files.map(file=>{
-      new_img_array.push(`${req.protocol}://${req.get('host')}/uploads/${file.filename}`)
+      new_img_array.push(`${req.protocol}://${req.get('host')}/upload/${file.filename}`)
     })
   }
   // console.log("new_img_arr: ",new_img_array)
